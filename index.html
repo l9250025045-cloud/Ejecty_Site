@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejecty — Clean Your Speakers in Seconds</title>
+  <meta name="description" content="Remove water and dust from any speaker. Test headphones and speakers for problems. Measure real noise around you. No tools. Just your phone." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a href="#top" class="brand">
+        <span class="brand__icon"><img src="assets/app-icon.png" alt="Ejecty" /></span>
+        <span class="brand__name">Ejecty</span>
+      </a>
+      <nav class="nav">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#support">Support</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+      <a href="#" class="btn btn--primary header__cta">
+        <img class="btn__apple" src="assets/appstore-icon.svg" alt="" />
+        <span>Get the App</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__dots"></div>
+
+    <div class="hero__inner">
+      <h1 class="hero__title">Clean Your Speakers<br>in Seconds</h1>
+      <p class="hero__subtitle">Remove water and dust from any speaker. Test headphones and speakers for problems. Measure real noise around you. No tools. Just your phone</p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--primary hero__download">
+          <img class="btn__apple" src="assets/appstore-icon.svg" alt="" />
+          <span>Download App</span>
+          <img class="hero__mascot" src="assets/spider.png" alt="" />
+        </a>
+        <a href="#capabilities" class="btn btn--ghost"><span>Explore Features</span></a>
+      </div>
+    </div>
+
+    <!-- dust / mess to wipe off the title with the cursor -->
+    <div class="mess" id="mess">
+      <span class="deco deco--explosion"><img src="assets/explosion.png" alt="" /></span>
+      <span class="deco deco--blob12"><img src="assets/blob-12.png" alt="" /></span>
+      <span class="deco deco--blob2"><img src="assets/blob-2.png" alt="" /></span>
+      <span class="deco deco--blob4"><img src="assets/blob-4.png" alt="" /></span>
+      <span class="deco deco--blob11"><img src="assets/blob-11.png" alt="" /></span>
+      <span class="deco deco--smile"><img src="assets/smile.png" alt="" /></span>
+      <span class="deco deco--blob6"><img src="assets/blob-6.png" alt="" /></span>
+    </div>
+    <p class="hero__hint">Wipe the fog &amp; dust off with your cursor ✨</p>
+
+    <!-- steamed / fogged glass you can wipe clear with the cursor -->
+    <canvas class="hero__fog" id="heroFog" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- ===================== CAPABILITIES HEADING (white) ===================== -->
+  <section class="capshead" id="capabilities">
+    <h2 class="capshead__title">Capabilities</h2>
+    <p class="capshead__subtitle">Everything You Need for Perfect Sound</p>
+  </section>
+
+  <!-- ===================== CAPABILITIES (gradient block) ===================== -->
+  <section class="caps">
+    <div class="caps__grid"></div>
+
+    <div class="caps__stage" id="capsStage">
+      <div class="caps__track" id="capsTrack">
+
+        <!-- 1. Water Eject -->
+        <article class="feat" data-index="0">
+          <div class="phone"><img src="assets/phone-water.png" alt="Water Ejection screen" /></div>
+          <div class="fcard">
+            <h3>Water Eject</h3>
+            <p>Eject water. Instantly. Low-frequency waves push liquid out of speakers in seconds. Three modes: water, dust, emergency.</p>
+            <div class="fcard__nav">
+              <button class="pill" data-nav="prev">← Back</button>
+              <button class="pill" data-nav="next">Next →</button>
+            </div>
+          </div>
+          <img class="feat__arrow feat__arrow--up" src="assets/arrow-right.svg" alt="" />
+        </article>
+
+        <!-- 2. dB Meter -->
+        <article class="feat" data-index="1">
+          <div class="phone"><img src="assets/phone-db.png" alt="dB Meter screen" /></div>
+          <div class="fcard">
+            <h3>dB Meter</h3>
+            <p>Measure real noise. See how loud your environment really is — in real time.</p>
+            <div class="fcard__nav">
+              <button class="pill" data-nav="prev">← Back</button>
+              <button class="pill" data-nav="next">Next →</button>
+            </div>
+          </div>
+          <img class="feat__arrow feat__arrow--down" src="assets/arrow-down.svg" alt="" />
+        </article>
+
+        <!-- 3. Device Test -->
+        <article class="feat" data-index="2">
+          <div class="phone"><img src="assets/phone-stereo.png" alt="Stereo Test screen" /></div>
+          <div class="fcard">
+            <h3>Device Test</h3>
+            <p>Test any headphones or speakers. Headphones, speakers, phone — one test finds problems.</p>
+            <div class="fcard__nav">
+              <button class="pill" data-nav="prev">← Back</button>
+              <button class="pill" data-nav="next">Next →</button>
+            </div>
+          </div>
+          <img class="feat__arrow feat__arrow--up" src="assets/arrow-right.svg" alt="" />
+        </article>
+
+        <!-- 4. Frequency Generator -->
+        <article class="feat" data-index="3">
+          <div class="phone"><img src="assets/phone-freq.png" alt="Frequency Generator screen" /></div>
+          <div class="fcard">
+            <h3>Frequency Generator</h3>
+            <p>From bass to ultrasound. Swipe to control 0–25,000 Hz. Test hearing, speakers, headphones &amp; custom waveforms.</p>
+            <div class="fcard__nav">
+              <button class="pill" data-nav="prev">← Back</button>
+              <button class="pill" data-nav="next">Next →</button>
+            </div>
+          </div>
+          <img class="feat__arrow feat__arrow--long" src="assets/arrow-long.svg" alt="" />
+        </article>
+
+      </div>
+
+      <div class="caps__dots" id="capsDots"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ===================== SUPPORT / FAQ ===================== -->
+  <section class="faq" id="support">
+    <div class="faq__head">
+      <p class="faq__eyebrow">Support</p>
+      <h2 class="faq__title">Frequently Asked Questions</h2>
+      <p class="faq__subtitle">Find answers to common questions about Ejecty, subscriptions, and how the app works.</p>
+    </div>
+
+    <div class="faq__list">
+      <div class="faq__item is-open">
+        <button class="faq__q" type="button" aria-expanded="true">
+          <span>How does Ejecty clean my speaker?</span>
+          <span class="faq__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq__a"><p>Ejecty plays specially tuned sound frequencies and low-frequency vibrations through your speaker. These sound waves help push out trapped water, dust, and debris. Just pick a mode, press play, and let the sound do the work.</p></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Is it safe for my phone and speakers?</span>
+          <span class="faq__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq__a"><p>Yes. Ejecty only plays sound through your device's speaker — it doesn't use any liquids, tools, or physical contact. We recommend starting at a lower volume and increasing it gradually. Ejecty does not perform a certified technical diagnosis and cannot determine whether a speaker is physically damaged.</p></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Does it really remove water?</span>
+          <span class="faq__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq__a"><p>The Water Eject mode plays low-frequency tones designed to vibrate water out of the speaker grille. Results depend on your device and how much liquid is trapped. For best results, hold the phone with the speaker facing down and run the mode a few times.</p></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Do I need any extra tools or equipment?</span>
+          <span class="faq__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq__a"><p>No. Everything works with just your phone — no cables, adapters, cleaning kits, or accessories required.</p></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Is Ejecty free? What does a subscription include?</span>
+          <span class="faq__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq__a"><p>Ejecty includes free features plus an optional subscription that unlocks all cleaning modes, the Frequency Generator, and the dB Meter without limits. The exact price and billing period are always shown in the app before you confirm a purchase.</p></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>How do I cancel my subscription?</span>
+          <span class="faq__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq__a"><p>Subscriptions are managed through your Apple ID. On your iPhone, open <strong>Settings</strong> → tap your name → <strong>Subscriptions</strong> → select <strong>Ejecty</strong> → <strong>Cancel Subscription</strong>. Your access stays active until the end of the current billing period.</p></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span>Can I get a refund?</span>
+          <span class="faq__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq__a"><p>Purchases are handled by the App Store. To request a refund, visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID, find Ejecty in your purchase history, and follow the steps. Refund decisions are made by Apple.</p></div>
+      </div>
+    </div>
+
+    <p class="faq__contact">Still need help? Email us at <a href="mailto:contact@kiab-imc.com">contact@kiab-imc.com</a> and we'll be glad to help.</p>
+  </section>
+
+  <!-- ===================== VIDEO STRIP (white) ===================== -->
+  <section class="vids" aria-hidden="true">
+    <div class="vids__row" id="vidsRow">
+      <div class="vid is-active"><video src="assets/vid-1.mp4" muted loop autoplay playsinline preload="auto"></video></div>
+      <div class="vid"><video src="assets/vid-2.mp4" muted loop autoplay playsinline preload="auto"></video></div>
+      <div class="vid"><video src="assets/vid-3.mp4" muted loop autoplay playsinline preload="auto"></video></div>
+      <div class="vid"><video src="assets/vid-4.mp4" muted loop autoplay playsinline preload="auto"></video></div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA / FOOTER ===================== -->
+  <section class="cta">
+    <div class="cta__inner">
+      <div class="cta__text">
+        <h2 class="cta__title">Ready for Perfect Sound?</h2>
+        <p class="cta__subtitle">Download Ejecty and give your speakers a new life — in seconds</p>
+      </div>
+      <a href="#" class="btn btn--primary">
+        <img class="btn__apple" src="assets/appstore-icon.svg" alt="" />
+        <span>Download App</span>
+      </a>
+      <div class="cta__ratings"><img src="assets/cta-image.png" alt="App Store ratings" /></div>
+    </div>
+    <nav class="cta__legal">
+      <a href="terms-of-use.html">Terms of Use</a>
+      <span>+</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </section>
+
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>
